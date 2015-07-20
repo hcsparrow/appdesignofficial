@@ -1,10 +1,10 @@
 var name = ["red", "orange", "yellow", "green", "blue", "pink", "purple", "brown", "black"];
 var color = ["#ff0000", "#ff6600", "#ffff00", "#33cc33", "#0000ff", "#ff33cc", "#990099", "#663300", "#000000"];
 var limit = 14;
-var interval;
-var time = 0;
+var timeBeg;
+var timeEnd;
 var firstName;
-var bool = true;
+
 
 
 Template.colorGame.events({
@@ -37,24 +37,17 @@ Template.colorGame.events({
 		}
 		else
 		{
-			bool = false;
+			timeEnd=(new Date()).getTime();
+			var time= (timeEnd - timeBeg)/1000;
 			$("#gameOver").html('You have finished the game. Your time is ' + time + " seconds");
 		}
 
 	}
 })
 
-function braction(){
-	if(bool)
-	{
-		time++;
-	}
-}
-
 Template.colorGame.rendered = function(){
+		timeBeg=(new Date()).getTime();
 		limit = 14;
-
-		interval = Meteor.setInterval(braction, 1000);
 
 		var n = Math.floor(Math.random() * 8);
 		var c = Math.floor(Math.random() * 8);
