@@ -1,5 +1,7 @@
 Meteor.publish("theProfiles",function(){return Profiles.find();});
 
+Meteor.publish("theUsers",function(){return Profiles.find();});
+
 
 Meteor.publish("userData", function () {
   if (this.userId) {
@@ -8,5 +10,9 @@ Meteor.publish("userData", function () {
   } else {
     this.ready();
   }
+});
+
+Meteor.publish("images", function () {
+	return Images.find();
 });
 
