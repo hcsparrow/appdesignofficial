@@ -1,0 +1,36 @@
+<template name="leaderboard">
+
+<div class="row">
+	<div class="col-md-3">
+		<h1>Color Namer</h1>
+		<table class="table table-striped table-bordered" style="width:200%">
+			<thead>
+				<tr>
+					<td>User</td>
+					<td>Time</td>
+					<td>When</td>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each leaders}}
+					{{> leaderRow}}
+				{{/each}}
+			</tbody>
+		
+		</table>
+	</div>
+
+
+	<!-- Add the rest of the tables -->
+</div>
+
+
+</template>
+
+<template name="leaderRow">
+		<tr>
+			<td>{{user}}</td>
+			<td>{{time}}</td>
+			<td>{{createdAt}}</td>
+		</tr>
+</template>

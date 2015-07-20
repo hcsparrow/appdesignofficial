@@ -40,7 +40,7 @@ Template.colorGame.events({
 			timeEnd=(new Date()).getTime();
 			var time= (timeEnd - timeBeg)/1000;
 			$("#gameOver").html('You have finished the game. Your time is ' + time + " seconds");
-			var leader = {user: Meteor.userId(), time: time, game:"colorGame", createdAt: new Date()};
+			var leader = {user: Meteor.user().emails[0].address, time: time, game:"colorGame", createdAt: new Date()};
 			Leaders.insert(leader);
 		}
 
