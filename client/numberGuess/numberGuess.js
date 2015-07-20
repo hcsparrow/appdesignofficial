@@ -1,7 +1,6 @@
-var gameOver=false;
-var interval;
 var random;
-var time = 0;
+var timeBeg;
+var timeEnd;
 
 Template.numberGuess.events({
 
@@ -13,11 +12,13 @@ Template.numberGuess.events({
 		if(number.length==0){
 			alert("please enter a number" + number);
 		}
-		else{
+		else
+		{
 			var number2= parseInt(number);
 
 			if(number2 == random){
-				gameOver = true;
+				timeEnd=(new Date()).getTime();
+				var time= (timeEnd - timeBeg)/1000;
 				$("#message").html(number+" is correct!");
 				$("#number").val("");
 				$("#endGame").html("You have finished the game. Your time is " + time + " seconds.");
@@ -34,26 +35,13 @@ Template.numberGuess.events({
 				$("#message").html("lower than "+number);
 				$("#number").val("");
 			}
-	
-
 		}
-
 	}
-
-
 })
-
-function braction(){
-	
-	if(!gameOver){
-	time = time + 1;
-	}
-}
 
 
 Template.numberGuess.rendered = function(){
-		interval=Meteor.setInterval(braction, 1000);
+		timeBeg=(new Date()).getTime();
 		random=Math.floor((Math.random() * 100) + 1);
-		$("#test").html(random);
 
 };
