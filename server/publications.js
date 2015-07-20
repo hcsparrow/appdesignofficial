@@ -1,5 +1,6 @@
 Meteor.publish("theProfiles",function(){return Profiles.find();});
 
+Meteor.publish("theLeaders",function(){return Leaders.find();});
 
 Meteor.publish("userData", function () {
   if (this.userId) {
