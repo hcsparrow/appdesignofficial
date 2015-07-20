@@ -1,0 +1,19 @@
+.gameBox{
+	cursor:pointer;
+}
+
+#colorDiv{
+	background: #bdc3c7;
+}
+
+#reactionDiv{
+	background: #bdc3c7;
+}
+
+#numberDiv{
+	background: #c0392b;
+}
+
+#evenOdd{
+	background: #c0392b;
+}
