@@ -1,0 +1,25 @@
+Next goal
+
+Create a version where the profile information is stored in the Users collection
+and where users can update their profile and can view the profiles of all other users...
+
+For pedagogial reasons, it might be better to separate the Profile info from the Users collection
+so we can show how users can own data....
+
+Currently we have user accounts and non-users can't see the Profiles.
+
+Next step, add editing for the profiles and add a userid field to the profiles so only the user can edit his/her profile
+
+This will be version 2.0
+It is usable and functional and a minimal viable product for the AppDesign mobile app.
+
+We can also test that it works on android 
+and try to get it to work on Mac (it would be nice to have it in the app stores!)
+
+I should also create a minimal viable product for my TYP teams ... and let them understand the products
+enough to modify them ...
+
+Resources:
+* Bootstrap for EditProfile page http://www.bootply.com/sY7gQy6XF7
+* W3Schools for bootstrap http://www.w3schools.com/bootstrap/default.asp
+* TutorialPoint http://www.tutorialspoint.com/bootstrap/bootstrap_forms.htm
