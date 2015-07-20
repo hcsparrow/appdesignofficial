@@ -22,9 +22,9 @@ Template.evenOdd.events({
 			timeBeg=(new Date()).getTime();			
 		}
 		else {
-			$("#even").css("disabled","disabled");
-			$("#odd").css("disabled","disabled");
-			$("#message").html("You lose. You answered "+totalGuesses+ " correctly");
+			document.getElementById("even").disabled=true;
+			document.getElementById("odd").disabled=true;
+			$("#message").html("You were wrong. But you answered "+totalGuesses+ " correctly");
 		}
 	},
 
@@ -44,9 +44,11 @@ Template.evenOdd.events({
 		}
 
 		else {
-			$("#even").css("disabled","disabled");
-			$("#odd").css("disabled","disabled");
-			$("#message").html("You lose. You answered "+totalGuesses+ " correctly");
+			document.getElementById("even").disabled=true;
+			document.getElementById("odd").disabled=true;
+
+			if (time>1.5) 
+			$("#message").html("You took "+time+" seconds, which is too long. But you answered "+totalGuesses+ " correctly!");
 		}
 	}
 })
@@ -58,3 +60,4 @@ Template.evenOdd.rendered = function(){
 	$("#number").html(random);
 	timeBeg=(new Date()).getTime();
 };
+

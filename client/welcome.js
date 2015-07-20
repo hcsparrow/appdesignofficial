@@ -8,9 +8,9 @@ Template.welcome.events({
 		Router.go('numberGuess');
 	},
 
-	//"click #numberDiv2": function(event){
-	//	Router.go('numberGuess2');
-	//},
+	"click #evenOddDiv": function(event){
+		Router.go('evenOdd');
+	},
 
 	"click #reactionDiv": function(event){
 		Router.go('reactionTimer');
