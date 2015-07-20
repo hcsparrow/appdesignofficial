@@ -12,4 +12,8 @@ Template.welcome.events({
 		Router.go('numberGuess2');
 	},
 
+	"click #reactionDiv": function(event){
+		Router.go('reactionTimer');
+	},
+
 })
