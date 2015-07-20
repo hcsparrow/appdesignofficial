@@ -46,13 +46,13 @@ Template.numberGuess.events({
 function braction(){
 	
 	if(!gameOver){
-	time = time +1;
+	time = time + 1;
 	}
 }
 
 
 Template.numberGuess.rendered = function(){
-		interval=Meteor.setInterval(braction, 1);
+		interval=Meteor.setInterval(braction, 1000);
 		random=Math.floor((Math.random() * 100) + 1);
 		$("#test").html(random);
 
