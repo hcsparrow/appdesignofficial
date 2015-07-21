@@ -24,7 +24,11 @@ Template.evenOdd.events({
 		else {
 			document.getElementById("even").disabled=true;
 			document.getElementById("odd").disabled=true;
+			
 			$("#message").html("You were wrong. But you answered "+totalGuesses+ " correctly");
+
+			if (time>1.5)
+			$("#message").html("You took "+time+" seconds, which is too long. But you answered "+totalGuesses+ " correctly!");
 		}
 	},
 
@@ -47,6 +51,8 @@ Template.evenOdd.events({
 			document.getElementById("even").disabled=true;
 			document.getElementById("odd").disabled=true;
 
+		$("#message").html("You were wrong. But you answered "+totalGuesses+ " correctly");
+			
 			if (time>1.5) 
 			$("#message").html("You took "+time+" seconds, which is too long. But you answered "+totalGuesses+ " correctly!");
 		}
