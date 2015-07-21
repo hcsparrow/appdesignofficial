@@ -29,6 +29,7 @@ Template.evenOdd.events({
 
 			if (time>1.5)
 			$("#message").html("You took "+time+" seconds, which is too long. But you answered "+totalGuesses+ " correctly!");
+			
 		}
 	},
 
@@ -55,6 +56,7 @@ Template.evenOdd.events({
 			
 			if (time>1.5) 
 			$("#message").html("You took "+time+" seconds, which is too long. But you answered "+totalGuesses+ " correctly!");
+		
 		}
 	}
 })
@@ -66,4 +68,9 @@ Template.evenOdd.rendered = function(){
 	$("#number").html(random);
 	timeBeg=(new Date()).getTime();
 };
+
+
+
+
+
 
