@@ -1,5 +1,6 @@
 #displayColorName {
     font-size: 40px;
+    font-weight: bold;
     font-family:"Times New Roman";
 }
 
@@ -26,7 +27,7 @@
 }
 
 #gameOver {
-	font-size:15px;
+	font-size:35px;
 	font-family: "Times New Roman";	
 
 }

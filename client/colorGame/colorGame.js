@@ -41,6 +41,7 @@ Template.colorGame.events({
 		else
 		{
 			timeEnd=(new Date()).getTime();
+			$("#colorButton").hide();
 			var time= (timeEnd - timeBeg)/1000;
 			$("#gameOver").html('You have finished the game. Your time is ' + time + " seconds");
 			var leader = {user: Meteor.user().emails[0].address, time: time, game:"colorGame", createdAt: new Date()};
