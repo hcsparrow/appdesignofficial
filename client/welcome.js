@@ -16,4 +16,6 @@ Template.welcome.events({
 		Router.go('reactionTimer');
 	},
 
+	
+
 })
