@@ -30,6 +30,7 @@
 #gameOver {
 	font-size:35px;
 	font-family: "Times New Roman";	
+	color: #d8e2e1;
 }
 
 .colorGame_name {
@@ -37,4 +38,13 @@
 	font-size: 25px;
 	width: 200px;
 	margin: 0px auto;
+}
+
+.colorGame_wrapper {
+	margin:40px 0px 0px 0px;
+	text-align:center;
+}
+
+.colorGame_formEnter {
+	text-align: center;
 }

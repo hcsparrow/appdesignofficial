@@ -1,7 +1,12 @@
 .bg-info{
 	text-align:center;
-	background-color:#e74c3c;
+	background-color:#6495ed;
 	color:#ffffff;
 	padding:10px;
 	outline:none;
+}
+
+#timeReq {
+	color: #d8e2e1;
+	text-align:center;
 }
