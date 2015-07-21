@@ -8,12 +8,14 @@ Template.welcome.events({
 		Router.go('numberGuess');
 	},
 
-	"click #evenOddDiv": function(event){
+	"click #evenOdd": function(event){
 		Router.go('evenOdd');
 	},
 
 	"click #reactionDiv": function(event){
 		Router.go('reactionTimer');
 	},
+
+	
 
 })

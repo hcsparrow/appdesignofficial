@@ -23,12 +23,15 @@ Template.colorGame.events({
 			if(firstName != userInput)
 			{
 				$("#incorrectMessage").html('Your answer is incorrect. Try again.');
-
+				$("#incorrectMessage").show();
+				$("#correctMessage").hide();
 			}
 			else
 			{
-				$("#incorrectMessage").html('Your answer is correct.');
-				firstName = a;
+				$("#correctMessage").html('Your answer is correct.');
+				$("#correctMessage").show();
+				$("#incorrectMessage").hide();
+				firstName = name[c];
 				$("#displayColorName").html(a);
 				$("#displayColorName").css("color", b);
 				$("#exampleInputColor").val("");
@@ -59,6 +62,8 @@ Template.colorGame.rendered = function(){
 
 		$("#displayColorName").html(firstName);
 		$("#displayColorName").css("color", b);
+
+		firstName = name[c];
 
 		var userInput = $("#exampleInputColor").val();
 

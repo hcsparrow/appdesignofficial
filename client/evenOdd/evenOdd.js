@@ -29,7 +29,12 @@ Template.evenOdd.events({
 
 			if (time>1.5)
 			$("#message").html("You took "+time+" seconds, which is too long. But you answered "+totalGuesses+ " correctly!");
+<<<<<<< HEAD
 			$("#playAgain").attr("style", "display:inline");
+=======
+			var leader = {user: Meteor.user().emails[0].address, time: totalGuesses, game:"evenOdd", createdAt: new Date()};
+			Leaders.insert(leader);
+>>>>>>> origin/master
 		}
 	},
 
