@@ -1,0 +1,32 @@
+#displayColorName {
+    font-size: 40px;
+    font-family:"Times New Roman";
+}
+
+#incorrectMessage {
+	font-size:15px;
+	color:#FF0000;
+	font-family: "Times New Roman";	
+}
+
+#correctMessage {
+	font-size:15px;
+	color:#00CC00;
+	font-family: "Times New Roman";	
+}
+
+#type {
+	font-size:15px;
+	font-family: "Times New Roman";	
+
+}
+
+#colorButton {
+	font-family: "Times New Roman";	
+}
+
+#gameOver {
+	font-size:15px;
+	font-family: "Times New Roman";	
+
+}

@@ -23,11 +23,14 @@ Template.colorGame.events({
 			if(firstName != userInput)
 			{
 				$("#incorrectMessage").html('Your answer is incorrect. Try again.');
-
+				$("#incorrectMessage").show();
+				$("#correctMessage").hide();
 			}
 			else
 			{
 				$("#correctMessage").html('Your answer is correct.');
+				$("#correctMessage").show();
+				$("#incorrectMessage").hide();
 				firstName = name[c];
 				$("#displayColorName").html(a);
 				$("#displayColorName").css("color", b);

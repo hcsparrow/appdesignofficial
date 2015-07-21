@@ -12,6 +12,6 @@ Template.leaderboard.helpers({
 
 Template.leaderboard.helpers({
 	leaders3: function() {
-		return Leaders.find({game: "evenOdd"}, {sort:{time:1}, limit:15})
+		return Leaders.find({game: "evenOdd"}, {sort:{time:-1}, limit:15})
 	}
 })
