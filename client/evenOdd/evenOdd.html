@@ -1,21 +1,16 @@
 <template name="evenOdd">
+	<div id="number" class="evenOdd_displayArea"></div>
 
-<div id="number"></div>
-<button id="even">Even</button>
-<Button id="odd">Odd</button>
-
-
-<br>
-<div id="message"></div>
-<br>
-
-<form>
-	<div id="endGame"></div>
-<input type="button" id="replay" onClick="history.go(0)" value="Play again">
-</form>
-
-
-
+	<div class="evenOdd_buttonsContainer">
+		<button id="even" class="btn eveOdd_evenButton">Even</button>
+		<button id="odd" class="btn eveOdd_oddButton">Odd</button>
+	</div>
+	<div id="message" class="evenOdd_msg"></div>
+	<div class="evenOdd_buttonsContainer">
+		<form>
+		<button type="submit" id="playAgain" class="btn evenOdd_playAgain" style="display:none;">Play Again</button>
+		</form>
+	</div>
 </template>
 
 

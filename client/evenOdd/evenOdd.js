@@ -17,7 +17,7 @@ Template.evenOdd.events({
 		if (remainder==0 && time<=1.5) {
 
 			totalGuesses = totalGuesses+1;
-			random=Math.floor((Math.random() * 100) + 1);
+			random=Math.floor((Math.random() * 99) + 1);
 			$("#number").html(random);
 			timeBeg=(new Date()).getTime();			
 		}
@@ -29,7 +29,7 @@ Template.evenOdd.events({
 
 			if (time>1.5)
 			$("#message").html("You took "+time+" seconds, which is too long. But you answered "+totalGuesses+ " correctly!");
-			
+			$("#playAgain").attr("style", "display:inline");
 		}
 	},
 
@@ -43,7 +43,7 @@ Template.evenOdd.events({
 
 		if (remainder!=0 && time<=1.5) {
 			totalGuesses = totalGuesses+1;
-			random=Math.floor((Math.random() * 100) + 1);
+			random=Math.floor((Math.random() * 99) + 1);
 			$("#number").html(random);
 			timeBeg=(new Date()).getTime();			
 		}
@@ -52,11 +52,11 @@ Template.evenOdd.events({
 			document.getElementById("even").disabled=true;
 			document.getElementById("odd").disabled=true;
 
-		$("#message").html("You were wrong. But you answered "+totalGuesses+ " correctly");
+			$("#message").html("You were wrong. But you answered "+totalGuesses+ " correctly");
 			
 			if (time>1.5) 
 			$("#message").html("You took "+time+" seconds, which is too long. But you answered "+totalGuesses+ " correctly!");
-		
+			$("#playAgain").attr("style", "display:inline");
 		}
 	}
 })
@@ -64,7 +64,7 @@ Template.evenOdd.events({
 
 Template.evenOdd.rendered = function(){
 		
-	random=Math.floor((Math.random() * 100) + 1);
+	random=Math.floor((Math.random() * 99) + 1);
 	$("#number").html(random);
 	timeBeg=(new Date()).getTime();
 };

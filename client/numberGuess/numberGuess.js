@@ -27,8 +27,8 @@ Template.numberGuess.events({
 				$("#message").html("higher than "+number);
 				$("#number").val("");
 			}
-			else if(number2 < 0 || number2 > 100){
-				$("#message").html(number+" is not between 0 and 100");
+			else if(number2 < 0 || number2 > 99){
+				$("#message").html(number+" is not between 0 and 99");
 				$("#number").val("");
 			}
 			else{
@@ -42,6 +42,6 @@ Template.numberGuess.events({
 
 Template.numberGuess.rendered = function(){
 		timeBeg=(new Date()).getTime();
-		random=Math.floor((Math.random() * 100) + 1);
+		random=Math.floor((Math.random() * 99) + 1);
 
 };

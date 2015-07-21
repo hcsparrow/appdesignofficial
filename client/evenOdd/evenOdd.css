@@ -1,0 +1,58 @@
+body{
+	background-color: #033035;
+}
+.evenOdd_displayArea
+{
+	text-align: center;
+	color: #d8e2e1;
+	font-size: 140px;
+	background-color: #d04a63;
+	width:200px;
+	height: 200px;
+	padding: 0px 10px 5px 10px;
+	margin: 0px auto;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.evenOdd_buttonsContainer{
+	margin: 0px auto;
+	width: 200px;
+	text-align: center;
+	margin-top: 20px;
+}
+.eveOdd_evenButton{
+	width: 98px;
+	background-color: #38806c;
+	color: #ffffff;
+	outline: none;
+}
+.eveOdd_evenButton:hover{
+	color:#ffc557;
+}
+.eveOdd_oddButton{
+	width: 98px;
+	background-color: #ffc557;
+	color: #ffffff;
+	outline: none;
+}
+.eveOdd_oddButton:hover{
+	color:#38806c;
+}
+.evenOdd_msg
+{
+	color: #d8e2e1;
+	font-size: 24px;
+	text-align: center;
+	margin: 40px 0px 20px 0px;
+}
+.evenOdd_playAgain{
+	width: 200px;
+	margin: 0px auto;
+	background-color: #a4c47b;
+	color: #ffffff;
+}
+.evenOdd_playAgain:hover{
+	color: #033035;
+}
