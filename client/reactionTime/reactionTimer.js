@@ -22,7 +22,7 @@ Template.reactionTimer.events({
         {
             level++; 
             $("#timeReq").html(levels[level] + " is the max to go to the next level");
-            Session.set("level",level)
+            Session.set("level",level);
         }
         else {level=0;Session.set("level",0);}
          

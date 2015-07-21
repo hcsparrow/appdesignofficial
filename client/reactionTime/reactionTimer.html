@@ -1,8 +1,7 @@
 <template name="reactionTimer">
 	<div class="bg-info">
-		<h1>The Game That Lets You Practice Your Reactions</h1> <div id="time"> </div>
+		<h1>The Game That Tests Your Reactions</h1> <div id="time"> </div>
 		<button id="startgame" class="btn btn-lg btn-default">Start</button><br/>
 	</div>
-	<br>
-	<div id="timeReq">Current Level: [level], you must get a reaction time of no more than [levels] seconds.</div>
+	<div id="timeReq"> Current Level: {{level}} To get to the next level you need a maximum of {{maxlevel}} milliseconds.</div>
 </template>
