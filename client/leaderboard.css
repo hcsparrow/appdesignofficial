@@ -1,0 +1,11 @@
+.leaderboard_title {
+	color: #d8e2e1;
+}
+
+.leaderboard_table > thead {
+	color: #d8e2e1;
+}
+
+.leaderboard_row:nth-child(even) {
+	color: #d8e2e1;
+}
