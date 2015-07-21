@@ -18,6 +18,7 @@
 
 #type {
 	font-size:15px;
+	color: #ffffff;
 	font-family: "Times New Roman";	
 
 }
@@ -29,5 +30,11 @@
 #gameOver {
 	font-size:35px;
 	font-family: "Times New Roman";	
+}
 
+.colorGame_name {
+	background-color: #ffffff;
+	font-size: 25px;
+	width: 200px;
+	margin: 0px auto;
 }
