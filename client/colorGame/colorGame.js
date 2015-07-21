@@ -12,11 +12,11 @@ Template.colorGame.events({
 		event.preventDefault();
 		if(limit > 0)
 		{
-			var n = Math.floor(Math.random() * 8);
-			var c = Math.floor(Math.random() * 8);
+			var na = Math.floor(Math.random() * 8);
+			var co = Math.floor(Math.random() * 8);
 
-			var a = name[n];
-			var b = color[c];
+			var a = name[na];
+			var b = color[co];
 
 			var userInput = $("#exampleInputColor").val();
 
