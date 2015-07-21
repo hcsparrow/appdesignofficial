@@ -1,7 +1,7 @@
 body{
 	background-color: #033035;
 }
-.evenOdd_displayArea
+.numberGuess_displayArea
 {
 	text-align: center;
 	color: #d8e2e1;
@@ -11,48 +11,43 @@ body{
 	height: 200px;
 	padding: 0px 10px 5px 10px;
 	margin: 0px auto;
-	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-khtml-border-radius: 5px;
+	border-radius: 5px;
 }
-.evenOdd_buttonsContainer{
+.numberGuess_buttonsContainer{
 	margin: 0px auto;
 	width: 200px;
 	text-align: center;
 	margin-top: 20px;
 }
-.eveOdd_evenButton{
-	width: 98px;
+.numberGuess_guessButton{
+	width: 200px;
 	background-color: #38806c;
 	color: #ffffff;
 	outline: none;
 }
-.eveOdd_evenButton:hover{
+.numberGuess_guessButton:hover{
 	color:#ffc557;
 }
-.eveOdd_oddButton{
-	width: 98px;
-	background-color: #ffc557;
-	color: #ffffff;
-	outline: none;
-}
-.eveOdd_oddButton:hover{
-	color:#38806c;
-}
-.evenOdd_msg
+
+.numberGuess_msg
 {
 	color: #d8e2e1;
 	font-size: 24px;
 	text-align: center;
 	margin: 40px 0px 20px 0px;
 }
-.evenOdd_playAgain{
+.numberGuess_playAgain{
 	width: 200px;
 	margin: 0px auto;
 	background-color: #a4c47b;
 	color: #ffffff;
 }
-.evenOdd_playAgain:hover{
+.numberGuess_playAgain:hover{
 	color: #033035;
+}
+.numberGuess_textBox{
+	margin: 20px 0px;
 }

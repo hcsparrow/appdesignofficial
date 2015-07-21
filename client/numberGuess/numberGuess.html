@@ -1,17 +1,16 @@
 <template name="numberGuess">
 	<form id="formEnter">
-		<input text="text" name="number" id="number">
-		<button  id="guessButton" type="submit">Guess</button>
-		<div id="message"></div>
-		<br>
-		<div id="endGame"></div>
-		<input type="button" id="replay" onClick="history.go(0)" value="Play again">
-	</form>
+		<div class="numberGuess_buttonsContainer">
 
-	<div id="endGame"></div>
-	<form>
-		<button  id="guessButton" type="submit">Guess</button>
-		<div id="message"></div>
-		<div id="endGame"></div>
+			<input text="text" name="number" id="number" style="numberGuess_textBox" maxlength="2">
+
+<div id="message" class="numberGuess_msg"></div>
+
+			<button  id="guessButton" class="btn numberGuess_guessButton" type="submit">Guess</button>
+		</div>
 	</form>
+	<div id="endGame" class="numberGuess_msg"></div>
+	<div class="numberGuess_buttonsContainer">
+		<input type="submit" id="playAgain" style="display:none" class="btn numberGuess_playAgain" value="Play again">
+	</div>
 </template>
