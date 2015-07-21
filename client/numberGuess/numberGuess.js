@@ -22,6 +22,8 @@ Template.numberGuess.events({
 				$("#message").html(number+" is correct!");
 				$("#number").val("");
 				$("#endGame").html("You have finished the game. Your time is " + time + " seconds.");
+				var leader = {user: Meteor.user().emails[0].address, time: time, game:"numberGuess", createdAt: new Date()};
+				Leaders.insert(leader);
 			}
 			else if(number2 < random){
 				$("#message").html("higher than "+number);

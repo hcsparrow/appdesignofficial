@@ -24,7 +24,7 @@ Template.reactionTimer.events({
 });
 
 
-//
+
 Template.reactionTimer.rendered = function(){
 	$("#timeReq").html(levels[level] + " is the max to go to the next level");
 }
