@@ -1,14 +1,19 @@
 <template name="colorGame">
-	<div class="colorGame_wrapper">
+	<div class="colorGame_wrapper text-center">
 		<form class="colorGame_formEnter" id="formEnter">
+
 			<div class="form-group">
 				<div id="displayColorName" class="colorGame_name"></div>
-				<label for="exampleInputColor"><div id='type'>Type in the color of the words you see. The options are: red, orange, yellow, green, blue, pink, purple, brown, and black.</div></label>
-				<center><input type="text" class="form-control" id="exampleInputColor" placeholder="Color" style="height:50px; width:500px"></center>
 			</div>
-			<div id="incorrectMessage"></div>
-			<div id="correctMessage"></div>
-			<button type="submit" class="btn btn-default" id="colorButton">Submit</button>
+
+			<div class="colorGame_inputWrapper">
+				<input type="text" class="form-control" id="exampleInputColor" placeholder="Color" style="height:50px;">
+			</div>
+			
+			<div id="colorGame_msgWrapper" class="colorGame_msgWrapper"></div>
+			<div class="colorGame_submitButtonWrapper">
+			<button type="submit" class="btn btn-lg btn-success" id="colorButton">Submit</button>
+			</div>
 			<div id="gameOver"></div>
 			<div id="test"></div>
 		</form>

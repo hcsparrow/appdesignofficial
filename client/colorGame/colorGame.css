@@ -2,6 +2,10 @@
     font-size: 40px;
     font-weight: bold;
     font-family:"Times New Roman";
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	background-color: #d8e2e1;
 }
 
 #incorrectMessage {
@@ -11,7 +15,7 @@
 }
 
 #correctMessage {
-	font-size:15px;
+	font-size:28px;
 	color:#00CC00;
 	font-family: "Times New Roman";	
 }
@@ -23,9 +27,7 @@
 
 }
 
-#colorButton {
-	font-family: "Times New Roman";	
-}
+
 
 #gameOver {
 	font-size:35px;
@@ -36,15 +38,51 @@
 .colorGame_name {
 	background-color: #ffffff;
 	font-size: 25px;
-	width: 200px;
-	margin: 0px auto;
+	width:100%;
 }
 
 .colorGame_wrapper {
-	margin:40px 0px 0px 0px;
+	margin:0px;
 	text-align:center;
+	width: 60%;
+	margin:0px auto;
+	padding: 20px;
+	margin-top: 70px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
 }
 
 .colorGame_formEnter {
 	text-align: center;
+}
+.colorGame_inputWrapper{
+	background: #38806c;
+	padding: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+.colorGame_submitButtonWrapper{
+	background-color: #a4c47b;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	margin-top: -10px;
+}
+.colorGame_msgWrapper
+{
+	color: #ffffff;
+	background-color: #ffc557;
+	padding: 20px 0px 30px 0px;
+	margin-top: -10px;
+	display: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
 }

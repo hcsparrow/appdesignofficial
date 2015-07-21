@@ -22,15 +22,13 @@ Template.colorGame.events({
 
 			if(firstName != userInput)
 			{
-				$("#incorrectMessage").html('Your answer is incorrect. Try again.');
-				$("#incorrectMessage").show();
-				$("#correctMessage").hide();
+				$("#colorGame_msgWrapper").html('Incorrect. Try again.');
+				$("#colorGame_msgWrapper").show();
 			}
 			else
 			{
-				$("#correctMessage").html('Your answer is correct.');
-				$("#correctMessage").show();
-				$("#incorrectMessage").hide();
+				$("#colorGame_msgWrapper").html('Correct.');
+				$("#colorGame_msgWrapper").show();
 				firstName = name[c];
 				$("#displayColorName").html(a);
 				$("#displayColorName").css("color", b);
@@ -41,7 +39,7 @@ Template.colorGame.events({
 		else
 		{
 			timeEnd=(new Date()).getTime();
-			$("#colorButton").hide();
+			document.getElementById("colorButton").disabled=true;
 			var time= (timeEnd - timeBeg)/1000;
 			$("#gameOver").html('You have finished the game. Your time is ' + time + " seconds");
 			var leader = {user: Meteor.user().emails[0].address, time: time, game:"colorGame", createdAt: new Date()};
