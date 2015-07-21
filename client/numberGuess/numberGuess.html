@@ -2,15 +2,22 @@
 	<form id="formEnter">
 		<div class="numberGuess_buttonsContainer">
 
-			<input text="text" name="number" id="number" style="numberGuess_textBox" maxlength="2">
+			<div class="numberGuess_inputWrapper">
+				<input text="text" name="number" id="number" class="numberGuess_textBox" maxlength="2">
+			</div>
 
-<div id="message" class="numberGuess_msg"></div>
+			<div id="message" class="numberGuess_msg">Guess a number between 1 and 99</div>
 
 			<button  id="guessButton" class="btn numberGuess_guessButton" type="submit">Guess</button>
 		</div>
 	</form>
-	<div id="endGame" class="numberGuess_msg"></div>
+	<div id="endGame" class="numberGuess_msgEnd"></div>
 	<div class="numberGuess_buttonsContainer">
-		<input type="submit" id="playAgain" style="display:none" class="btn numberGuess_playAgain" value="Play again">
+		<form>
+			<input type="submit" id="playAgain" style="display:none" class="btn numberGuess_playAgain" value="Play again">
+		</form>
 	</div>
+	
 </template>
+
+	

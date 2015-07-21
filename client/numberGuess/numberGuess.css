@@ -27,18 +27,30 @@ body{
 	background-color: #38806c;
 	color: #ffffff;
 	outline: none;
+
 }
 .numberGuess_guessButton:hover{
 	color:#ffc557;
 }
 
-.numberGuess_msg
-{
-	color: #d8e2e1;
+.numberGuess_msg{
+	color: #ffffff;
+	background-color: #d04a63;
+	font-size: 24px;
+	min-height: 70px;
+	text-align: center;
+	margin: -10px 0px 20px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+
+}
+.numberGuess_msgEnd{
+	color: #ffffff;
 	font-size: 24px;
 	text-align: center;
-	margin: 40px 0px 20px 0px;
 }
+
 .numberGuess_playAgain{
 	width: 200px;
 	margin: 0px auto;
@@ -49,5 +61,18 @@ body{
 	color: #033035;
 }
 .numberGuess_textBox{
-	margin: 20px 0px;
+	font-size: 24px;
+	text-align: center;
+	border: 0px;
+	width:170px;
+}
+.numberGuess_inputWrapper
+{
+	background-color:#ffc557;
+	padding: 70px 0px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+
 }
