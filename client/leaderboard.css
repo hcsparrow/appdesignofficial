@@ -1,11 +1,26 @@
 .leaderboard_title {
-	color: #d8e2e1;
+	color: #ffc557;
+	text-align: center;
+	margin: 50px 0px 20px 0px;
 }
 
 .leaderboard_table > thead {
+	text-align: center;
+	background-color: #d04a63;
 	color: #d8e2e1;
 }
 
-.leaderboard_row:nth-child(even) {
-	color: #d8e2e1;
+.leaderboard_row:nth-child(odd){
+	color:#38806c;
+	background-color: #a4c47b;
+	text-align: center;
+	
 }
+.leaderboard_row:nth-child(even) {
+	color: #a4c47b;
+	background-color: #38806c;
+	text-align: center;
+	
+}
+
+

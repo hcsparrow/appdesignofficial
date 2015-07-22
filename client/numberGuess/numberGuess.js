@@ -23,7 +23,7 @@ Template.numberGuess.events({
 				$("#endGame").html("You have finished the game. Your time is " + time + " seconds.");
 				$("#playAgain").attr("style", "display:inline");
 				document.getElementById("guessButton").disabled=true;
-				var leader = {user: Meteor.user().emails[0].address, time: time, game:"numberGuess", createdAt: new Date()};
+				var leader = {user: Meteor.user().emails[0].address, time: time, game:"numberGuess"};
 				Leaders.insert(leader);
 			}
 			else if(number2 < random){
