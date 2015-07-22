@@ -1,3 +1,26 @@
 #profilePhoto {
 	width:100%;
 }
+.profile_title {
+	color: #ffc557;
+	text-align: center;
+	margin: 50px 0px 20px 0px;
+}
+
+.profile_table > thead {
+	text-align: center;
+	background-color: #d04a63;
+	color: #d8e2e1;
+}
+
+.profile_row:nth-child(odd){
+	color:#38806c;
+	background-color: #a4c47b;
+	
+}
+.profile_row:nth-child(even) {
+	color: #a4c47b;
+	background-color: #38806c;	
+}
+
+
