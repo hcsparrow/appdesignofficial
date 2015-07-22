@@ -10,3 +10,49 @@
 	color: #d8e2e1;
 	text-align:center;
 }
+
+.reactionTime_timeWrapper
+{
+	text-align: center;
+	color: #000000;
+	font-size: 20px;
+	background-color: #ffc557;
+	width:200px;
+	height: 200px;
+	padding: 100px 10px 5px 10px;
+	margin: 0px auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
+.reactionTime_buttonWrapper{
+	text-align: center;
+	color: #d8e2e1;
+	background-color: #d04a63;
+	width:200px;
+	height: 70px;
+	padding: 10px 10px 10px 10px;
+	margin: 0px auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	margin-top:-10px;
+	margin-bottom: 30px;
+}
+.reactionTime_instructionsWrapper{
+	text-align: center;
+	color: #38806c;
+	background-color: #a4c47b;
+	width:200px;
+	padding: 10px 10px 10px 10px;
+	margin: 0px auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	margin-top:-10px;
+	margin-bottom: 30px;
+}
