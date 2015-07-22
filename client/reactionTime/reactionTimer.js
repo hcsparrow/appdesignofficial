@@ -5,24 +5,16 @@ var running=false;
 var level=0;
 var levels= [1000, 750, 600, 500, 450, 300, 275, 250, 200];
 Session.set("level",0);
-<<<<<<< HEAD
 
-
-=======
->>>>>>> origin/master
 Template.reactionTimer.helpers({
 	level:function(){return Session.get("level")},
 	maxlevel:function(){return levels[Session.get("level")]}
 })
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 Template.reactionTimer.events({
 	"click #startgame": function(event){
 
 		if(!running){
-<<<<<<< HEAD
 			//document.getElementById("startgame").disabled=true;
 			$("#startgame").fadeOut();
 			waitingTime=1000+Math.random()*5000;
@@ -42,10 +34,11 @@ Template.reactionTimer.events({
 		if(reactiontime <= levels[level]){
 			level++;
 			Session.set("level",level);
-		}		
-=======
-			document.getElementById("startgame").disabled=true;
+				
+
+		document.getElementById("startgame").disabled=true;
 		responsetime=1000+Math.random()*5000; setTimeout(changecolor,responsetime); 
+	}
 		else{running=false;$("#startgame").html("start!");
 		var stoptime=(new Date()).getTime();
 		var reactiontime= stoptime - starttime - responsetime
@@ -58,23 +51,24 @@ Template.reactionTimer.events({
 		
 
 	}
->>>>>>> origin/master
+
 	}
 });
 
 
-<<<<<<< HEAD
+
 function enableButton(){
 	//document.getElementById("startgame").disabled=false;
 	$("#startgame").fadeIn();
 	$("#startgame").html("push me!");
 	running = true;
-=======
+
 var starttime=0;
 var responsetime=0;
 var running=false;
 function changecolor(){
 	document.getElementById("startgame").disabled=false;
 	$("#startgame").html("push me!");
->>>>>>> origin/master
+
+}
 }
