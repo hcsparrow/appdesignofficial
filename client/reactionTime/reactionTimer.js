@@ -15,8 +15,8 @@ Template.reactionTimer.events({
 	"click #startgame": function(event){
 
 		if(!running){
-			//document.getElementById("startgame").disabled=true;
-			$("#startgame").fadeOut();
+			$("#startgame").hide();
+			document.getElementById("startgame").disabled=true;			
 			waitingTime=1000+Math.random()*5000;
 			setTimeout(enableButton,waitingTime); 
 			starttime=(new Date()).getTime();
@@ -25,32 +25,20 @@ Template.reactionTimer.events({
 			running=false;
 			$("#startgame").html("start!");
 			stoptime=(new Date()).getTime();
-			var reactiontime= Math.round(stoptime - starttime - waitingTime);
+			var reactiontime = Math.round(stoptime - starttime - waitingTime);
 			$("#time").html("rt="+reactiontime+" ms");
-		}
-
-		// if it is lower than 111 refresh page
-
-		if(reactiontime <= levels[level]){
-			level++;
-			Session.set("level",level);
-				
-
-		document.getElementById("startgame").disabled=true;
-		responsetime=1000+Math.random()*5000; setTimeout(changecolor,responsetime); 
-	}
-		else{running=false;$("#startgame").html("start!");
-		var stoptime=(new Date()).getTime();
-		var reactiontime= stoptime - starttime - responsetime
-		$("#time").html("rt="+Math.round(reactiontime)+" ms")
-
-		if(reactiontime <= levels[level]){
-			level++; Session.set("level",level)
-		}
-		else{level=0;Session.set("level",0);}
 		
 
-	}
+			if(reactiontime <= levels[level]){
+				level++;
+				Session.set("level",level);			
+			}
+			else
+			{
+				level = 0;
+				Session.set("level",level);
+			}
+		}
 
 	}
 });
@@ -58,17 +46,8 @@ Template.reactionTimer.events({
 
 
 function enableButton(){
-	//document.getElementById("startgame").disabled=false;
-	$("#startgame").fadeIn();
+	$("#startgame").show();
 	$("#startgame").html("push me!");
 	running = true;
-
-var starttime=0;
-var responsetime=0;
-var running=false;
-function changecolor(){
-	document.getElementById("startgame").disabled=false;
-	$("#startgame").html("push me!");
-
-}
+	document.getElementById("startgame").disabled=false;	
 }
